@@ -1,0 +1,63 @@
+Function: 
+		It is a set of statements or block of code to ececute a task.
+		It helps to break a large program into smaller part 
+		Which helps developer to debug the program easily	
+		In Javascript we define a function using "function" keyword.
+		We can define more than one  function in a file, and we can call a function more than one time.
+		We cannot define a function inside anoother function.
+
+Function Naming convensions/ Rules 
+1. function name always starts with alphabet
+2. function name can be alphanumeric
+3. Function name cannot contain only numbers 
+4. Function name cannot starts with a number
+5. Function name cannot contain space ex[get data()] X
+6. Function name cannot contain any special character except underscore 
+	get_data()
+7. Try to keep Function name like this: getData();
+	camelCase
+________________________________________________________________________________________
+
+Types of functions in Javascript:
+1. Predefine Function 	: Funcitons which are already defined. 
+								OR
+						  Function whose definition is already define and we only need to call.
+Ex:		prompt(), parseInt(), 
+
+2. User Define Function : Functions which are defined by the user.
+	Types of user define functions
+
+	1. Parameterized Function
+	2. Non-Parameterized Function
+	3. Function with return keyword
+	4. Function with default parameters 
+_______________________________________________________________________________________
+
+1. Paremeterized Function: Functions with parameters 
+Syntax:
+// function definition
+		function functionName(parameters sperated by comma)
+		{
+				Statements;
+		}
+//function calling 
+
+		functionName(values seprated by comma);
+
+
+2. Non-parameterize : Function without parameters 
+
+	// function definition
+		function functionName()
+		{
+			statements;
+		}
+
+		// Function calling
+
+		functionName();
+
+
+
+	
+

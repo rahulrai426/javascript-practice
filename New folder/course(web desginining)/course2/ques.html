@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		ul
+		{
+			list-style-type: none;
+		}
+
+#submit
+{
+	top: 0px;
+}
+
+*
+{
+	background-color: aqua;
+	font-family: serif;
+}
+
+
+
+	</style>
+
+	<script src="jsjq/jQuery v3.6.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() 
+		{
+				$("#div2").hide();
+				$("#div3").hide();
+				$("#div4").hide();
+				$("#div5").hide();
+
+
+
+				$("#next").click(function()
+				{
+					$("#div2").show();
+				});
+
+				$("#next").click(function()
+				{
+					$("#next").hide();
+				});
+				$("#next1").click(function()
+				{
+					$("#next1").hide();
+				});
+				$("#next2").click(function()
+				{
+					$("#next2").hide();
+				});
+
+					$("#next3").click(function()
+				{
+					$("#next3").hide();
+				});
+
+				$("#next1").click(function()
+				{
+					$("#div3").show();
+				});
+
+				$("#next2").click(function()
+				{
+					$("#div4").show();
+
+				});
+
+			$("#next3").click(function()
+				{
+					$("#div5").show();
+
+				});
+
+
+
+
+
+
+
+
+
+					$("#submit").click(function()
+				{
+					$("#next").show();
+				});
+
+						$("#submit").click(function()
+				{
+					$("#next1").show();
+				});
+
+
+						$("#submit").click(function()
+				{
+					$("#next2").show();
+				});
+
+
+
+						$("#submit").click(function()
+				{
+					$("#next3").show();
+				});
+
+
+
+					$("#next").click(function()
+			{
+				var r1=$(".rbtn2:checked").val();
+				var r2=$(".rbtn1:checked").val();
+				if(r1)
+				{
+					$("#right").html("Correct");
+					$("#right").css('color','Black');
+
+				}
+
+				else if(r2)
+				{
+
+					$("#right").html("<p style='color: red;'>Wrong</p>Right Answer is A");	
+					$("#right").css('color','green');
+				}
+
+				
+				else
+				{
+
+					$("#right").html("Blank");	
+					
+				}
+			});
+
+
+
+					$("#next1").click(function()
+			{
+				var r1=$(".rbtn3:checked").val();
+				var r2=$(".rbtn1:checked").val();
+
+				if(r1)
+				{
+					$("#right1").html("Correct");
+					$("#right1").css('color','Black');
+
+				}
+
+				else if(r2)
+				{
+
+					$("#right1").html("<p style='color: red;'>Wrong</p>Right Answer is B");	
+					$("#right1").css('color','green');
+				}
+				else
+				{
+
+					$("#right1").html("blank");
+						
+				}
+			});
+
+
+					$("#next2").click(function()
+			{
+				var r1=$(".rbtn4:checked").val();
+				if(r1)
+
+				{
+					
+					$("#right2").html("Correct");
+					$("#right2").css('color','Black');
+					
+
+				}
+				
+				else
+					
+				{
+					
+					$("#right2").html("<p style='color: red;'>Wrong</p>Right Answer is B");	
+					$("#right2").css('color','green');
+		
+				}
+			});
+
+
+					$("#next3").click(function()
+			{
+				var r1=$(".rbtn5:checked").val();
+				if(r1)
+
+				{
+					
+					$("#right3").html("Correct");
+					$("#right3").css('color','Black');
+					
+
+				}
+				
+				else
+					
+				{
+					
+					$("#right3").html("<p style='color: red;'>Wrong</p>Right Answer is B");	
+					$("#right3").css('color','green');
+		
+				}
+			});
+
+
+					$("#next4").click(function()
+			{
+				var r1=$(".rbtn6:checked").val();
+				if(r1)
+
+				{
+					
+					$("#right4").html("Correct");
+					$("#right4").css('color','Black');
+					
+
+				}
+				
+				else
+					
+				{
+					
+					$("#right4").html("<p style='color: red;'>Wrong</p>Right Answer is B");	
+					$("#right4").css('color','green');
+		
+				}
+			});
+
+
+
+
+			// $("#next").click(function()
+			// {
+			// 	var r2=$(".rbtn1:not(checked)").val();
+			// 	if(r2)
+			// 	{
+			// 	$("#right").html("field");
+					
+
+			// 	}
+			
+				
+				
+			// });
+
+
+
+
+					// $("#test").click(function(){
+					// 	$("#div2").hide();
+					// });
+
+
+		});
+
+		
+
+
+
+	
+		
+		
+
+
+
+
+
+
+
+	</script>
+
+
+
+</head>
+<body>
+
+	<button id="submit">Previous</button><br>
+
+<div id="div1">
+	<h3 id="h1"><strong> Q1.</strong>&nbsp;&nbsp;Grand Central Terminal, Park Avenue, New York is the world's</h3>
+	<ul>
+		<table>
+		<tr>
+		<td><li><input type="radio" name="r1" class="rbtn2">&nbsp;&nbsp;<span style="font-weight: bold;">A.</span>&nbsp;&nbsp;largest railway station</li></td>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">B.</span>&nbsp;&nbsp;highest railway station</li></td>
+		</tr>
+		
+
+		<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">C.</span>&nbsp;&nbsp;longest railway station</li></td>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">D.</span>&nbsp;&nbsp;None of the above</li></td>
+	</tr>
+	</table>
+
+	</ul>	
+	<b id="right"></b>
+	<br><br>
+	<button id="next">Next</button>
+
+</div>
+
+<div id="div2">
+	<h3 id="h2"><strong> Q2.</strong>&nbsp;&nbsp;Entomology is the science that studies</h3>
+	<ul>
+		<table>
+			<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">A.</span>&nbsp;&nbsp;Behavior of human beings</li></td>
+		<td><li><input type="radio" name="r1" class="rbtn3">&nbsp;&nbsp;<span style="font-weight: bold;">B.</span>&nbsp;&nbsp; Insects</li></td>
+		</tr>
+		<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">C.</span>&nbsp;&nbsp;The origin and history of technical and scientific terms</li></td>
+		<td>
+		<li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">D.</span>&nbsp;&nbsp;The formation of rocks</li></td>
+</table>
+	</ul>
+	<b id="right1"></b>
+	<br><br>
+	<button id="next1">Next</button>
+</div>
+
+<div id="div3">
+	<h3 id="h2"><strong> Q3.</strong>&nbsp;&nbsp;Eritrea, which became the 182nd member of the UN in 1993, is in the continent of</h3>
+	<ul>
+		<table>
+			<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">A.</span>&nbsp;&nbsp;Asia</li></td>
+		<td><li><input type="radio" name="r1" class="rbtn4">&nbsp;&nbsp;<span style="font-weight: bold;">B.</span>&nbsp;&nbsp; Africa</li></td>
+	</tr>
+		<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">C.</span>&nbsp;&nbsp;The origin and history of technical and scientific terms</li></td>
+	
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">D.</span>&nbsp;&nbsp;The formation of rocks</li></td>
+		</tr>
+		</table>
+	</ul>
+	<b id="right2"></b>
+	<br><br>
+	<button id="next2">Next</button>
+</div>
+
+
+<div id="div4">
+	<h3 id="h3"><strong> Q4.</strong>&nbsp;&nbsp;Garampani sanctuary is located at</h3>
+	<ul>
+		<table>
+			<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">A.</span>&nbsp;&nbsp;Junagarh, Gujarat</li></td>
+		<td><li><input type="radio" name="r1" class="rbtn5">&nbsp;&nbsp;<span style="font-weight: bold;">B.</span>&nbsp;&nbsp; Diphu, Assam</li></td>
+	</tr>
+		<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">C.</span>&nbsp;&nbsp;Kohima, Nagaland</li></td>
+	
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">D.</span>&nbsp;&nbsp;Gangtok, Sikkim</li></td>
+		</tr>
+		</table>
+	</ul>
+	<b id="right3"></b>
+	<br><br>
+	<button id="next3">Next</button>
+
+</div>
+
+
+<div id="div5">
+	<h3 id="h5"><strong> Q5.</strong>&nbsp;&nbsp;Garampani sanctuary is located at</h3>
+	<ul>
+		<table>
+			<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">A.</span>&nbsp;&nbsp;Junagarh, Gujarat</li></td>
+		<td><li><input type="radio" name="r1" class="rbtn6">&nbsp;&nbsp;<span style="font-weight: bold;">B.</span>&nbsp;&nbsp; Diphu, Assam</li></td>
+	</tr>
+		<tr>
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">C.</span>&nbsp;&nbsp;Kohima, Nagaland</li></td>
+	
+		<td><li><input type="radio" name="r1" class="rbtn1">&nbsp;&nbsp;<span style="font-weight: bold;">D.</span>&nbsp;&nbsp;Gangtok, Sikkim</li></td>
+		</tr>
+		</table>
+	</ul>
+	<b id="right4"></b>
+	<br><br>
+	<button id="next4">Next</button>
+
+</div>
+<script type="text/javascript">
+	
+	function showshide() 
+	{
+		var x= document.getElementById("show");
+	if(x.style.display==="none")
+	{
+		x.style.display="block";
+	}
+	else
+	{
+		x.style.display="none";
+	}
+	}
+
+</script>
+
+
+
+<!-- <p id="show">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<button  onclick="showshide()">Show/hide</button>
+ -->
+
+</body>
+</html>

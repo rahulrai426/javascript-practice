@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Get Text Input Field Value in JavaScript</title>
+</head>
+
+<style type="text/css">
+	
+td
+{
+	padding: 20px;
+}
+
+
+</style>
+
+<body>
+    <!-- <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+     -->
+    
+<table id="show">
+
+<tr>
+<td><label>number1</label></td>
+<td><input type="text" name="" id="name" >	</td>
+
+</tr>
+
+<tr>
+<td><label>number2</label></td>
+<td><input type="text" name="" id="two"></td>
+</tr>
+	
+</table>
+
+
+<button onclick="test();show();">submit</button>
+
+
+
+
+<!-- <button id="test" onclick="name()">Submit</button> -->
+
+
+
+<script>
+        // function getInputValue(){
+        //     // Selecting the input element and get its value 
+        //     var inputVal = parseInt(prompt("Enter the number")).value;
+            
+        //     // Displaying the value
+        //     alert(inputVal);
+        // }
+
+
+
+
+var a = parseInt(prompt("input"));
+
+
+
+
+document.getElementById("name").value=a;
+
+var b = parseInt(prompt("input"));
+
+
+
+
+document.getElementById("two").value=b;
+
+
+
+function test()
+
+
+
+
+
+{
+
+document.write("<table border='1'>")
+
+
+for(var i=1; i<=a; i++)
+{
+	document.write("<tr>")
+	for(var o=1; o<=b; o++)
+	{
+		if((i+0)%2==0)
+		{
+			document.write("<td style='padding: 20px;'></td>")
+		}
+		else
+		{
+			document.write("<td style='padding: 20px;'></td>")
+		}
+	}
+	document.write("</tr>")
+}
+document.write("</table>")
+}
+
+
+function show()
+		{
+			var x=document.getElementById("show")
+			if(x.style.display=="none")
+			{
+				x.style.display="block"
+			}
+			else
+			{
+				x.style.display="none"
+			}
+		}	
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

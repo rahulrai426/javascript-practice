@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+			function openWindow()
+			{
+				if(confirm("Do you really want to redirect to other page ?"))
+				{
+						window.open("https://www.google.com");
+				}else
+				{
+						document.write("<h1> You are on the same page </h1>")
+				}
+			}
+
+
+	</script>
+
+	<button onclick="openWindow()"> Click here </button>
+	<br>
+	<button onclick="history.back()"> Back </button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+*
+{
+	margin: 0;
+	padding: 0;
+/*	background: darkred;*/
+}
+
+#navbarNav ul
+{
+	margin-left: 500px;
+	/*padding: 20px*/;
+	font-weight: 600;
+	color: #fff;
+}
+#navbarNav ul li
+{
+	padding: 20px;
+}
+#navbarNav ul li a 
+{
+	color: black;
+}
+.navbar-brand
+
+{
+	color: #fff;
+}

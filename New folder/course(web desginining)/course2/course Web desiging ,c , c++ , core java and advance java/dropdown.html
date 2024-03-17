@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+/**
+{
+	margin: 0px;
+	background-color: blue;
+}*/
+
+div
+{
+	height: 200px;
+	width: 100%;
+	background-color: black;
+}
+
+div ul
+{
+	display: inline-flex;
+	list-style: none;
+}
+
+div ul li
+{
+	color: white;
+	padding: 20px;
+	
+}
+.test ul
+{
+	display: none;
+}
+
+div ul li:hover ul
+{
+	display: block;
+	background-color: aqua;
+}
+
+.test ul li
+{
+	margin-left: -40px;
+	padding: 10px;
+
+
+}
+
+.test ul li:last-child
+{
+	border-bottom: 2px solid red;
+}
+
+.test ul li:hover
+{
+	color: red;
+	cursor: pointer;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+	<div>
+		<ul>
+			<li>Home</li>
+			<li>services</li>
+			<li class="test">test
+			<ul>
+				<li>one</li>
+				<li>two</li>
+			</ul>
+
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

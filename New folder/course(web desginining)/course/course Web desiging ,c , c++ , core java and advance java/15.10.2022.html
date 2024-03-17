@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		.navigation
+		{
+			display: flex;
+			width: 100%;
+			background-color: red;
+			height: 100%;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.navigation ul
+		{
+			display: inline-flex;
+			width: 100%;
+			margin-left: 200px;
+			
+		}
+
+		.navigation ul li 
+		{
+			list-style: none;
+			/*width: 100%;*/
+			padding: 20px;
+		}
+
+		.dropdown
+		{
+			display: none;
+		}
+
+		.navigation ul li:hover .dropdown
+		{
+			display: block;
+			position: relative;
+			/*margin-left: -220px;*/
+	/*margin-top: 5px;*/
+	background: rgb(248,248,255);
+		}
+
+		.dropdown ul li
+		{
+			
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="navigation">
+		<ul>
+			<li> Home</li>
+			<li>About Us
+
+				<div class="dropdown">
+					
+					<ul>
+						<li>Test</li>
+					</ul>
+
+				</div>
+
+
+			</li>
+			<li>More</li>
+		</ul>
+	</div>
+
+</body>
+</html>

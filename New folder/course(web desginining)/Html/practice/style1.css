@@ -1,0 +1,153 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*body
+{
+	background-color: darkred;
+}*/
+
+/*.flex-container
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+	text-align: center;
+	margin-left: 200px;
+}
+.flex-item
+{
+	margin: 15px;
+	padding: 15px;
+
+
+}
+.flex-container div
+{
+	padding: 15px;
+	margin: 15px;
+	margin-left: 10px;
+}*/
+
+.nav
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.new
+{
+	padding: 15px;
+	margin: 15px;
+}
+
+.flex-container
+{
+	display: flex;
+	margin: 0 auto 0 auto;
+}
+.flex-item
+{
+	padding: 15px;
+	margin: 15px;
+	cursor: pointer;
+}
+.submenu
+{
+	display: none;
+	background-color: none;
+}
+.flex-container .flex-item:hover .submenu
+{
+	display: block;
+	position: absolute;
+	padding: 10px;
+	/*margin-left: 10px;*/
+/*	width: 80px;*/
+	background-color: aliceblue;
+
+}
+.flex-item1
+{
+	padding: 10px;
+	background-color: none;
+}
+
+.flex-item1:hover
+{
+	background-color: green;
+}
+
+
+
+section
+{
+	display: flex;
+	width: 100%;
+	margin: 15px;
+	padding: 15px;
+}
+
+.left-col
+{
+	flex-basis: 25%;
+	background-color: black;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	/*margin-left: 15px;
+	padding: 15px;*/
+	margin-right: 10px;
+
+}
+
+.main-col
+{
+	flex-basis: 45%;
+	background-color: darkblue;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	margin-right: 10px;
+}
+.right-col
+{
+	flex-basis: 27%;
+	background-color: #FFA07A;
+	height: 100%;
+	width: 100%;
+	color: #000000;
+}
+
+.one
+{
+	height: 100px;
+	width: 100px;
+	background: red;
+	margin-left: 10px;
+}
+.four
+{
+	height: 100px;
+	width: 100px;
+	background: blue;
+	margin-left: 10px;
+}
+.two 
+{
+	height: 100px;
+	width: 100px;
+	background: green;
+	margin-left: 10px;
+}
+.three
+{
+	height: 100px;
+	width: 100px;
+	background: yellow;
+	margin-left: 10px;
+}

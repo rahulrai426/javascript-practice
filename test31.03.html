@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<script type="text/javascript">
+	
+	var name= prompt("Enter Your Name :- ");
+	var rollno = parseInt(prompt("Enter your roll No"));
+
+	document.write(name);
+	document.write("<br>")
+	document.write(rollno);
+document.write("<br>")
+	document.write(" Marks are Given Below");
+
+	var math = parseFloat(prompt("Enter your number"));
+	var sci = parseFloat(prompt("Enter your number"));
+	var eng = parseFloat(prompt("Enter your number"));
+	var hindi = parseFloat(prompt("Enter your number"));
+	var sst = parseFloat(prompt("Enter your number"));
+	document.write("<br>")
+	document.write("Math "+math);
+	document.write("<br>")
+	document.write("Sci "+sci);
+	document.write("<br>")
+	document.write("Eng "+eng);
+	document.write("<br>")
+	document.write("Hindi"+hindi);
+	document.write("<br>")
+	document.write("Sst "+sst);
+	document.write("<br>");
+
+	var sum = math + sci + eng + hindi + sst;
+
+	document.write(sum);
+
+	var per = sum /500 *100;
+	document.write("<br>");
+	document.write(per);
+	document.getElementById("demo").innerHTML= math.round(per);
+
+
+
+
+</script>
+<body>
+<p id="demo"></p>
+
+
+</body>
+</html>

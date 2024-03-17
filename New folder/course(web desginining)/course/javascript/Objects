@@ -1,0 +1,30 @@
+Object : Object is a real world entity, which means whatever exist in this world is known 			 as an Object.
+		 & we can Identify each object by it's behaviour or properties.
+
+
+		 					Object
+		 		Properties			Behaviour
+		 		Attributes			Action
+		 		Characterstics		Function/ Method
+
+		 						CAR
+		 			Modelno				drive()
+		 			Price				start()
+		 			Color				stop()
+		 			BrandName			....
+
+
+CAR.Modelno
+CAR.Price
+
+CAR.drive()
+
+___________________________________________________________________________________________
+Javascript : It is client side scripting Language and it is object based scripting Language
+
+
+ex:
+		document.write()
+
+document: Object
+write()	: Method

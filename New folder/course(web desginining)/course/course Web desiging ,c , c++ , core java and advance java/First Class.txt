@@ -1,0 +1,105 @@
+Internet : Network of networks 
+Types of Network :
+		Range			Ex
+	
+1. LAN		Within a building		Wifi
+
+2. MAN		Within a city		FM
+	
+3. WAN		All over the world	[ LAN + MAN]  Internet
+___________________________________________________________________
+
+Types of Website :
+1. Static Website : Which is same for all the users. It can not be modified according to the users.
+
+2. Dynamic Website : Which can be chnages according to the user need.
+_________________________________________________________________________
+URL : Uniform Resource Location
+URI :  Uniform Resource Identifier
+
+
+Ex: URL : https://www.facebook.com
+URI	: https://www.facebook.com/aptechlearningacademy
+____________________________________________________________________________
+
+<> : Angular Bracket 
+<starttag> </endtag>
+
+<body bgcolor="red">  Welcome  </body>
+body : element
+bgcolor: property
+red :value of bgcolor property
+Welcome : Content
+___________________________________________________________________________
+Types of Tag :
+1. Container Tag  : Which tag have opening anc closing .
+	Ex: <p> ...... </p>
+
+2. Standalone Tag : Which tags donot have closing tag 
+	Ex: 	<br> , <hr> , <img ....>
+__________________________________________________________________________
+Structure of HTML5 
+<!Doctype HTML>
+<html>
+	<head>
+		<title> </title>
+		<meta> </meta>
+		<link>
+		<script> </script>
+		<style> </style>		
+	</head>
+<body>
+	.....
+</body>
+
+</html>
+
+<!Doctype HTML> : Define the HTML5  version 
+<html> </html> : It is the largest cotainer
+<head> </head> : It is used to store infomation about the web page for the search engin.
+<title> </tile> : Title of the web Page. It is important for the indxeing.
+<meta> </meta> : It is used to store information about the web Page.
+<link> : It is used for linking extenal CSS and for linking the favicon icon
+<script> </script> : For defining Internal;  Javascript and for linking external Javascript, It can be used in both head and body tag
+<style> </style> : This tag is used to define the style , Internal Style for the webpage.
+<body> </body> : This is the second largset container tag, which contain other tags.
+_____________________________________________________________________________________________________
+Entities:
+	&nbsp;		For Space
+	&gt;		>
+	&lt;		<
+	&copy;		copyright symbol
+	&euro;		currency
+	&amp;		for &;
+
+______________________________________________________________________________________________________
+
+Formating Tags:
+Heading Tags :
+	<h1> </h1> 
+	<h2> </h2> 
+	<h3> </h3> 
+	<h4> </h4> 
+	<h5> </h5> 
+	<h6> </h6>
+__________________________ 
+Pragraph tag 
+	<p> ...... </p>
+
+Bold		<b> </b>
+Italic		<i> </i>
+Underline		<u> </u>
+Strong		<strong> </strong>	For Making text bold 
+emphasize	<em> </em>		For italic Text
+superscript	<sup> </sup>		
+subscript		<sub> </sub>	
+samll text	<small>  </small>
+Deleted text	<del>	</del>
+Inserted text	<ins> </ins>
+	
+Preformatted tag		<pre> </pre>
+definition		<dfn> <dfn>
+For code		<code> </code>
+for citation	<cite> </cite>
+For Quotation	<blockquote> </blockquote>
+for moving text	<marquee> </marquee>

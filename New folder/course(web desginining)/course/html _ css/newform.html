@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+
+<style type="text/css">
+
+
+
+  	
+
+
+.first
+{
+	display: flex;
+	width: 100%;
+}
+
+#first
+{
+	flex-basis: 60%;
+}
+
+
+.second
+{
+	margin-top: 15px;
+}
+
+.third
+{
+	display: flex;
+	margin-top: 15px;
+}
+
+#fourth
+
+{
+
+	flex-basis: 27%;
+
+}
+
+
+.fourth
+{
+	display: flex;
+	margin-top: 15px;
+}
+
+#fifth
+{
+	flex-basis: 33%;
+}
+
+#sixth
+{
+	flex-basis: 33%;
+	margin-left: -73px;
+}
+
+#seven
+{
+	flex-basis: 33%;
+	margin-left: -23px;
+}
+
+.fifth
+{
+	margin-top: 15px;
+}
+
+
+#submit
+
+{
+	margin-top: 20px;
+}
+
+
+
+</style>
+
+
+
+<script type="text/javascript">
+	
+
+function test()
+{
+	var mobile= document.getElementById("mobile");
+
+	if (mobile=="") 
+	{
+		alert("text box blank")
+		document.write("enter the 10 digit mobile no")
+
+	}
+}
+
+</script>
+
+
+
+</head>
+<body>
+<caption>Basic Information</caption>
+<br><br>
+
+<div class="first">
+	<div id="first">
+			
+			
+					<tr>
+						<td>Name:</td>
+						<td><select id="title" name="title">
+							<option value="title">Title</option>
+							<option value="Mr.">Mr.</option>
+							<option value="Mrs.">Mrs.</option>
+							<option value="Miss.">Miss.</option>
+							<option value="Master">Master.</option>
+							<option value="Major.">Major.</option>
+							<option value="Dr.">Dr.</option>
+							<option value="Baby Of.">Baby Of.</option>
+
+						</select></td>
+						<td><input type="text" name="fname" placeholder="..FirstName.."></td>
+						<td><input type="text" name="mname" placeholder="..MiddleName.."></td>
+						<td><input type="text" name="lname" placeholder="..LastName.."></td>
+					</tr>
+			
+		</div>
+
+
+			<div id="second">
+		<tr>
+			<td>Mobile No</td>
+			<td><input type="text" name="mno"></td>
+		</tr>
+	</div>
+
+
+</div>
+
+<div class="second">
+
+<div id="third">
+		<tr>
+			<td align="right">Date Of Birth:</td>
+			<td><input type="text" name="DD" placeholder="DD" size="4">
+				<input type="text" name="MM" placeholder="MM" size="4">
+				<input type="text" name="YYYY" placeholder="YYYY" size="5">
+				(or)<input type="age" name="age" placeholder="...age" size="4">
+				<select id="year" name="year">
+					<option value="Year">Year</option>
+					<option value="Month">Month</option>
+					<option value="Day">Day</option>
+				</select>
+
+			</td>
+
+		</tr>
+	</div>
+
+<div class="third">
+	
+<div id="fourth">
+		<tr>
+			<td align="right">Gender:</td>
+			<td><select id="gender" name="gender">
+				<option value="Select">Select</option>
+				<option value="Male">Male</option>
+				<option value="Female">female</option>
+				<option value="Couple">Couple</option>
+				<option value="Others">Others</option>
+			</select></td>
+
+			</td>
+
+		</tr>
+
+	
+</div>
+
+
+<div id="five">
+
+	<tr>
+			<td>Addnl phone:</td>
+			<td><input type="text" name="addlph"></td>
+
+		</tr>
+	
+</div>
+
+</div>
+
+<div class="fourth">
+	
+	<div id="fifth">
+		
+		<tr>
+			<td>Next Of Kin Name:</td>
+			<td><input type="text" name="kin"></td>
+
+		</tr>
+	</div>
+		<div id="sixth">
+		<tr>
+			<td>Relation: </td>
+			<td><input type="text" name="relation"></td>
+		</tr>
+		
+
+		</div>
+		
+		<div id="seven">
+			<tr>
+				<td>Contact No:</td>
+				<td><select>
+					<option value="+91(IN)">+91(IN)</option>
+				</select></td>
+				<td><input type="text" name="mobileno" id="mobile"></td>
+			</tr>
+		</div>
+	
+
+</div>
+
+<div class="fifth">
+
+	<div id="eight">
+		<tr>
+			<td>Patient Category:</td>
+			<td><select>
+				<option value="Select">Select</option>
+				<option value="Genral">Genral</option>
+			</select>
+		</tr>
+	</div>
+	
+</div>
+
+
+<input type="submit" name="submit" id="submit"><button onclick="test();"></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

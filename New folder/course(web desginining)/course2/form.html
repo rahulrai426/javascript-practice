@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function result() {
+			
+			// var name= parseInt(document.getElementById("txtName").value);
+			var m1 = parseInt(document.getElementById("txtM1").value);
+			var m2 = parseInt(document.getElementById("txtM2").value);
+			var m3 = parseInt(document.getElementById("txtM3").value);
+
+			var tot=m1+m2+m3;
+			var avg=tot/3;
+			var per=tot/100*30;
+
+
+
+			// alert(tot+""+avg+""+per);
+
+			document.getElementById("tot").innerHTML=tot;
+			document.getElementById("avg").innerHTML=avg;
+			document.getElementById("per").innerHTML=per;
+
+
+		}
+
+// var submit_button = document.getElementById("submit_button");
+
+// submit_button.addEventListner("click",function(e) {
+// 	var required = document.querySelectorAll("input[required]");
+
+// 	required.forEach(function(element) {
+		
+// 		if(element.value.trim() == " ")
+// 		{
+// 			element.backgroundColor="red";
+
+// 		}else
+// 		{
+// 			element.body.style.backgroundColor="white";
+// 		}
+
+// 	});
+// });
+
+
+function test() {
+
+	var FirstName= document.getElementById("FirstName").value;
+if(FirstName==""){
+
+				alert("text box blank");
+				document.getElementById("FirstName").style.backgroundColor="red"
+
+}
+
+
+}
+
+
+
+
+
+
+	</script>
+
+
+	<style type="text/css">
+		
+/*
+input[required] {
+  background-color: red;
+}
+*/
+
+	</style>
+</head>
+<body>
+
+<table>
+	<caption>student data</caption>
+	<tr>
+		<td>Name</td>
+		<td><input id="FirstName" name="FirstName" placeholder="First Name" required></td>
+	</tr>
+
+	<tr>
+		<td>Mark1</td>
+		<td><input type="text" id="txtM1"></td>
+	</tr>
+	<tr>
+		<td>Mark2</td>
+		<td><input type="text" id="txtM2" ></td>
+	</tr>
+	<tr>
+		<td>Mark3</td>
+		<td><input type="text" id="txtM3"></td>
+	</tr>
+
+	<tr>
+		<td colspan="2"><input id="submit_button" type = "submit">
+	</tr>
+
+	<tr>
+		<td><button onclick="result();test();" >Result</button></td>
+	</tr>
+	<tr>
+		<td>Total</td>
+		<td><i id="tot"></i></td>
+
+	</tr>
+	<tr>
+		<td>avrage</td>
+		<td><i id="avg"></i></td>
+	</tr>
+	<tr>
+		<td>Persentage</td>
+		<td><i id="per"></i></td>
+	</tr>
+</table>
+
+
+</body>
+</html>

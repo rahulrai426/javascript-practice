@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		
+		button
+		{
+			background-color: aqua;
+			padding: 10px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+		<div class="d1" align="center">
+				<img src="images/a.png" height="350px" id="simg">
+
+		</div>
+			<div align="center">
+					<button onclick="Prev()"> Prev</button>
+					<button onclick="Next()"> Next</button>
+			</div>
+
+
+		<script>
+			
+			function Prev()
+			{
+				document.getElementById('simg').src="images/b.jpg";
+			}
+
+			function Next()
+			{
+				document.getElementById('simg').src="images/c.jpg";
+			}
+
+
+
+		</script>
+
+
+
+
+</body>
+</html>

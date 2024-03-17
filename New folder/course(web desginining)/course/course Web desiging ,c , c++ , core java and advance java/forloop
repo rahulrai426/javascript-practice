@@ -1,0 +1,29 @@
+for loop : It is used to reduce the line of code. It is same as while loop
+
+Syntax:
+1:
+
+	for(initialization; condition; inc/dec)
+	{
+		statements;
+	}
+2:	
+	initialization;
+	for(; condition; inc/dec )
+	{
+		Statements;
+	}
+
+3:
+	initialization;
+	for(; condition;  )
+	{
+		Statements;
+		inc/dec;
+	}	
+
+4: Infinite for Loop
+	for(; ;)
+	{
+		stetements;
+	}

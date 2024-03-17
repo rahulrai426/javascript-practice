@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="jsjq/jQuery v3.6.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$("#btnApd").click(function() {
+				var myValue=$("#txtdata").val();
+				$("#uldata").append("<li>"+myValue+"</li>");
+				
+			});
+
+		});
+
+		$(document).ready(function(){
+			$("#btnPpd").click(function() {
+				var myValue=$("#txtdata").val();
+				$("#uldata").prepend("<li>"+myValue+"</li>");
+				
+			});
+
+		});
+
+
+		// $(document).ready(function(){
+
+		// 	$("#remove").click(function() {
+				
+		// 		var myValue=$("#txt").val()
+		// 		$("#uldata").remove(myValue)
+
+		// 	});
+
+		// });
+
+
+	</script>
+
+</head>
+<body>
+	<input type="text" id="txtdata" name="">
+
+	<ul id="uldata">
+		<li></li>
+		
+	</ul>
+
+	<button id="btnApd">Append</button>
+		<button id="btnPpd">Prepend</button>
+
+		<button id="remove">Remove</button>
+</body>
+</html>

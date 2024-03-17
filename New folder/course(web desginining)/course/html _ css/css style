@@ -1,0 +1,18 @@
+Padding
+
+	
+	padding-left
+	padding-right
+	padding-top
+	padding-bottom
+
+	Shorthand property 
+			padding:top right bottom left
+
+Margin :
+		margin-left
+		margin-right
+		margin-top
+		margin-bottom
+
+	margin: top right bottom left

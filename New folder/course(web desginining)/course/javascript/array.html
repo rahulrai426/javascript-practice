@@ -1,0 +1,92 @@
+<!-- 
+var n1=90;
+var marks =[12,34,56,78,90];
+Array : Array is used to store multiple data in a single variable.
+		In Array Each element stored in a index number, 
+		Where indexing starts with 0.
+
+		In Javascript we have 2 types of Array :
+		1. Single Dimensional 
+		2. Multi Dimensional
+
+	1 D Array : It is also known as One Dimenstional Array , Where data is stored in a row.
+				Here we store same kind of data.
+	Syntax:
+		1. var arrName = [values seprated by comma];
+
+		// Creating Array using Object
+		2. var arrName = new Array(size);
+
+How to access array Elements :
+
+
+	arrName[indexNum];
+
+How to update array Elemet :
+		arrName[indexNum] = value;
+
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array </title>
+</head>
+<body>
+
+	<script>
+				  // 0  1  2  3  4
+		var marks = [67,87,76,65,89];
+		document.write(marks[0]+" ")
+		document.write(marks[1]+" ")
+		document.write(marks[2]+" ")
+		document.write(marks[3]+" ")
+		document.write(marks[4]+" ")
+
+		for(var i =0; i<5; i++)
+		{
+			document.write("<p>"+marks[i]+"</p>")
+		}
+
+
+		// WAP to print the square of array elements 
+		// Here Array() is an Object 
+		//  new is a keyword which is used to allocate memory to the object 
+
+		var num = new Array(5);
+		for(var i=0; i<5; i++)
+		{
+				num[i] = parseInt(prompt("Enter the  number "))
+		}
+		document.write("<h1> Numbers are </h1>");
+		for(var i=0; i<5; i++)
+		{
+			document.write(num[i]+" ");
+		}
+
+
+
+
+	</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

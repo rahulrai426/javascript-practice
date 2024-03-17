@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+
+.first
+{
+	margin-left: 25%;
+}
+
+	
+.one
+{
+	width: 50%;
+	height: 100px;
+	background-color: aqua;
+	animation-name: one;
+	animation-duration: 4s;
+	position: relative;
+	animation-iteration-count: infinite;
+
+}
+.two
+{
+	width: 50%;
+	height: 50px;
+	background-color: red;
+	animation-name: two;
+	animation-duration: 4s;
+	position: relative;
+	animation-iteration-count: infinite;
+}
+
+.three 
+{
+	width: 25%;
+	height: 300px;
+	background-image: url(unnamed.jpg);
+	background-size: cover;
+	animation-name: three;
+	animation-duration: 4s;
+	position: relative;
+	animation-iteration-count: infinite;
+}
+.four
+{
+	width: 25%;
+	height: 300px;
+	background-color: gold;
+	float: left;
+	margin-top: -300px;
+	margin-left: 296px;
+	animation-name: four;
+	animation-duration: 4s;
+	position: relative;
+	animation-iteration-count: infinite;
+
+
+}
+
+
+
+.five
+{
+	width: 50%;
+	height: 100px;
+	background-color: black;
+	animation-name: five;
+	animation-duration: 4s;
+	position: relative;
+	animation-iteration-count: infinite;
+}
+
+.one p 
+{
+	animation-name: para;
+	animation-duration: 4s;
+	position: relative;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes para
+{
+
+	0%{top: 0px; left: 0px;}
+	25%{top: 0px; color: transparent;}
+	50%{top: 0px; color: transparent;}
+	100%{top: 0px;}
+
+}
+
+
+
+@keyframes one 
+{
+	0%{top: 0px; left: 0px;}
+	25%{top: 0px; background-color: transparent;}
+	50%{top: 0px; background-color: transparent;}
+	100%{top: 0px;}
+}
+
+
+
+@keyframes five
+{
+	0%{top: 0px; left: 0px;}
+	25%{top: 200px; background-color: transparent;}
+	50%{top: 200px; background-color: transparent;}
+	100%{top: 0px;}
+}
+
+@keyframes four
+{
+	0%{right: 0px; left: 0px;}
+	25%{right: 400px; left: 400px; background-color: blue;}
+	50%{right: 400px;background-color: blue;}
+	100%{left: 0px;}
+}
+/*
+@keyframes three
+{
+	0%{margin-left: 0px; margin-right: 0px;}
+	25%{margin-left: -200px; margin-right: 100px; background-image: none; background-color: blue;}
+	50%{margin-left: -200px; background-image: none; background-color: blue;}
+	100%{margin-right: 0px;}
+}*/
+
+@keyframes three
+{
+	0%{right: 0px; left: 0px;}
+	25%{right: -400px; left: -400px; background-color: gold; background-image: none;}
+	50%{right: -400px; background-color: gold; background-image: none;}
+	100%{left: 0px;}
+}
+
+@keyframes two
+{
+	0%{top: 0px; left: 0px;}
+	25%{top: 200px; background-color: transparent;}
+	50%{top: 200px; background-color: transparent;}
+	100%{top: 0px;}
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="first">
+<div class="one"><p align="center" style="padding: 25px; font-weight: 600; font-size: 20px;">Welcome to Animation world</p></div>
+
+<div class="two"></div>
+
+<div class="three"></div>
+<div class="four"></div>
+<div class="five"></div>
+
+</div>
+
+</body>
+</html>

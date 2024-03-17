@@ -1,0 +1,42 @@
+List : It is the collection of data items. IN html there are 3 types of List 
+1. Ordered List
+	<ol> </ol> : Conatiner tag for the List 
+	<li> </li> : Conatiner tag for list item
+
+	Syntax:
+		<ol>
+			<li> List Item 1 </li>
+			<li> List Item 2 </li>
+			<li> List Item 3 </li>
+		</ol>
+
+List Style : 
+		number : default
+		alphabet : loer-alpha & upper-alpha
+		roman number : lower-roman &upper-roman
+
+Syntax to apply stlpe to the list :
+
+<ol style="list-style-type:lower-alpha"> ... </ol>
+
+2. Unordered List 
+	<ul> </ul> : Conatiner tag for List 
+	<li> </li>	: Contains list item
+Syntax:
+		<ul>
+			<li> List Item 1 </li>
+			<li> List Item 2 </li>
+			<li> List Item 3 </li>
+		</ul>
+
+List style:
+	Circle 	
+	Square
+	Disc	- default
+
+
+3. Definition List :
+<dl> </dl> : Conatiner tag for Definition List 
+<dt> </dt> : definition Term 
+<dd> </dd> : Definition description
+

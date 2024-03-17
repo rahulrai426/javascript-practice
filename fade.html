@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="jquery/jQueryv3.6.1.js"></script>
+	<script src="jquery/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	$("#fade").click(function(){
+
+		$("#one").fadeIn();
+		$("#two").fadeIn("slow");
+		$("#three").fadeIn(3000);
+
+	});
+
+	});
+
+	$(document).ready(function () {
+	$("#fadeout").click(function(){
+
+		$("#one").fadeOut();
+		$("#two").fadeOut("slow");
+		$("#three").fadeOut(3000);
+
+	});
+
+	});
+
+
+</script>
+
+
+</head>
+<body>
+
+	<button id="fade">FADE</button><br><br>
+	<button id="fadeout">FadeOut</button><br><br>
+
+<div id="one" style="height: 80px;width: 80px;display: none;background-color: darkred;"></div>
+<div id="two" style="height: 80px;width: 80px;display: none;background-color: yellowgreen;"></div>
+<div id="three" style="height: 80px;width: 80px;display: none;background-color: blue;"></div>
+
+
+
+</body>
+</html>

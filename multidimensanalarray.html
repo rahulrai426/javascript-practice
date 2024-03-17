@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	<style>
+		table
+		{
+			width: 50%;
+		}
+
+		tr
+		{
+			text-align: center;
+		}
+
+	</style>
+
+<script type="text/javascript">
+	
+
+	var ary =[
+
+			["Harry",18,"Male","B.Com"],
+			["Rahul",20,"Male","BCA"],
+			["Ramesh",18,"Male","B-Tech"],
+			["Sumit",21,"Male","B.Com"]
+		];
+
+
+	document.write("<table border ='1' cellspacing='0'>")
+	document.write("<caption>Table</caption>")
+
+	for(var a = 0; a < ary.length; a++)
+	{
+		document.write("<tr>")
+		for( var b=0; b < ary[a].length; b++)
+		{
+			document.write("<td>" + ary[a][b]+ "</td>")
+		}
+		document.write("</tr>")
+		// document.write(ary[a]+"<br>")
+	}
+
+document.write("</table>")
+
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

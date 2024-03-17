@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script>		
+		var emp = new Object();
+		// properties of Employee 
+		emp.id = 101;
+		emp.name = "Raman";
+		emp.city="Delhi";
+		emp.salary=10000;
+		document.write("<table width = 100% border = '1'>")
+
+		document.write("<tr><th>emp ID</th>");     
+		document.write("<th> Employee Name</th>")
+		document.write("<th> Employee city</th>")
+		document.write("<th> Employee Salary</th></tr>")
+		document.write("<tr align ='center'><td>"+emp.id+"</td>")
+		document.write("<td>"+emp.name+ "</td>")
+		document.write("<td>"+emp.city+ "</td>")
+		document.write("<td>"+emp.salary+"</td></tr>")
+
+		document.write("<br>")
+		
+		// function 
+
+		emp.totalSal = function()
+		{
+			emp.hra = emp.salary*0.1;
+			emp.da = emp.salary*0.5;
+			emp.ta = emp.salary*0.4;
+
+			emp.tSal = emp.salary+emp.hra+emp.da+emp.ta;
+
+			document.write("<p> HRA : "+emp.hra+"</p>");
+			document.write("<p> DA : "+emp.da+"</p>");
+			document.write("<p> TA : "+emp.ta+"</p>");
+			document.write("<p> Total Salary : "+emp.tSal+"</p>");
+		}
+		emp.totalSal();
+
+
+
+	</script>
+
+
+
+</body>
+</html>

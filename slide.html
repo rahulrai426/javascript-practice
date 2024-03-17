@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="jquery/jQueryv3.6.1.js"></script>
+	<script src="jquery/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+<style type="text/css">
+	#panel, #flip
+	{
+		padding: 5px;
+		text-align: center;
+		background-color: #e5eecc;
+		border: solid 1px #c3c3c3;
+	}
+
+#panel
+{
+	padding: 50px;
+	display: none;
+}
+
+
+#test
+{
+	width: 100%;
+	background-color: blue;
+	height: 100px;
+}
+
+
+#dropdown
+{
+	display: none;
+	position: absolute;
+	background-color: darkred;
+	color: white;
+}
+
+#dropdown ul li
+{
+	margin-left: -35px;
+	padding: 5px;
+}
+
+li
+{
+	list-style: none;
+}
+
+/*#test ul li:hover #dropdown
+{
+	display: block;
+	position: relative;
+}*/
+
+</style>
+
+
+<script type="text/javascript">
+	
+$(document).ready(function() {
+	$("#flip").click(function() {
+		// $("#panel").slideDown("slow");
+
+		$("#panel").slideToggle();
+
+	});
+
+	
+
+
+});
+
+
+$(document).ready(function(){
+
+	
+$("#drop").click(function(){
+	$("#dropdown").slideToggle()
+});
+
+});
+
+
+
+$(document).ready(function(){
+// $("#flip").click(function() {
+// 		$("#panel").slideUp("slow");
+// 	});
+
+});
+
+</script>
+
+
+</head>
+<body>
+
+	<div id="flip">Click to slide down panel</div>
+	<div id="panel">Hello World</div>
+
+
+<div id="test">
+
+	<ul>
+		<li id="drop">Home
+			<div id ="dropdown">
+				<ul>
+					<li>Test</li>
+				</ul>
+				
+			</div>
+		</li>
+	</ul>
+	
+</div>
+
+
+
+</body>
+</html>

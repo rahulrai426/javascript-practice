@@ -1,0 +1,74 @@
+<!-- 
+
+Nested for : Here we use loop inside another loop , where we have an outer loop and an inner loop, in which if the condition of outer loop is true only then the inner loop work , otherwise terminate the outer loop.
+
+
+Syntax:
+	//outer
+		for(initialization; condition; inc/dec)
+		{
+			//inner 
+			for(initialization; condition; inc/dec)
+			{
+				Statements
+			}
+		}
+	1 2 3 4 5
+1	*
+2	* * 
+3	* * * 
+4	* * * *
+5	* * * * *
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title></title>
+ 	<style>
+ 		.col
+ 		{
+ 			color: maroon;
+
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	<div align="">
+ 
+ 	<script>
+ 		
+ 		var r,c,n;
+ 		n= parseInt(prompt("Enter the number of rows : "));
+ 		for(r=1; r<=n; r++)
+ 		{
+ 			// document.write("row Number "+r+"<br>");
+ 			for(c=1; c<=r; c++)
+ 			{
+ 				document.write("<span class='col'>*</span> ");
+ 			}
+ 			document.write("<br>");
+ 		}
+
+
+ 		// WAP to print table of numbers from 2-8
+
+ 		var num;
+		var res;
+		for(num=2; num<=8; num++)
+		{
+			document.write("<h2> ********** Table of "+num+"*****************</h1>");
+			for(var i=1; i<=10; i++)
+			{
+				res = num*i;
+				document.write(num+" * "+i+" = "+res+"<br>");
+			}
+		}
+
+
+ 	</script>
+</div>
+ </body>
+ </html>

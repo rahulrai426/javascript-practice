@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="jsjq/jQuery v3.6.0.js"></script>
+	<script>
+
+		$(document).ready(function()
+		{
+			$("#btn").click(function()
+			{
+				var m1 = ($("#txtM1").val());
+				var m2 = ($("#txtM2").val());
+				var m3 = ($("#txtM3").val());
+
+				var total = parseInt(m1)+parseInt(m2)+parseInt(m3);
+				var avg = total/3;
+				var per = (total/300)*100;
+
+				if(m1=="")
+				{
+					$("#txtM1").css("background-color", "red");
+					alert("Marks 1 field is blank");
+				}
+				
+				else
+				{
+					$("#txtM1").css("background-color", "lightgreen");
+				}
+
+				if(m2=="")
+				{
+					$("#txtM2").css("background-color", "red");
+					alert("Marks 2 field is blank");
+				}
+
+				else
+				{
+					$("#txtM2").css("background-color", "lightgreen");
+				}
+
+				if(m3=="")
+				{
+					$("#txtM3").css("background-color", "red");
+					alert("Marks 3 field is blank");
+				}
+
+				else
+				{
+					$("#txtM3").css("background-color", "lightgreen");
+				}
+
+				$("#totalMarks").html(total);
+				$("#avg").html(avg);
+				$("#per").html(per);
+			
+
+				// var x = parseInt(prompt("Enter the number: "));
+
+				// if(x>0)
+				// {
+				// 	$("#display").text(x+" is greater than 0");
+				// }
+
+				// else if(x<0)
+				// {
+				// 	$("#display").text(x+" is smaller than 0");
+				// }
+
+				// else
+				// {
+				// 	$("#display").text(x+" is equal to 0");
+				// }
+		
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<!-- <p id="display"></p> -->
+
+	<table>
+		<tr>
+			<td>Marks 1</td>
+			<td><input type="text" id="txtM1"></td>
+		</tr>
+
+		<tr>
+			<td>Marks 2</td>
+			<td><input type="text" id="txtM2"></td>
+		</tr>
+
+		<tr>
+			<td>Marks 3</td>
+			<td><input type="text" id="txtM3"></td>
+		</tr>
+
+		<tr>
+			<td><button id="btn">Submit</button></td>
+		</tr>
+
+		<tr>
+			<td>Total Marks</td>
+			<td><b id="totalMarks"></b></td>
+		</tr>
+
+		<tr>
+			<td>Average</td>
+			<td><b id="avg"></b></td>
+		</tr>
+
+		<tr>
+			<td>Percentage</td>
+			<td><b id="per"></b></td>
+		</tr>
+	</table>
+
+</body>
+</html>

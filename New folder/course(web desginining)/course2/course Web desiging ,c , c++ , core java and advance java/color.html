@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<style>
+	* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+		body {
+			background: #eee;
+		}
+		canvas {
+			background: black;
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+
+</style>
+</head>
+<body>
+
+	<canvas id="c"></canvas>
+
+<script>
+;(function(main) {
+		main();
+	})(function() {
+
+		'use strict';
+
+		var c = document.getElementById('c');
+		var ctx = c.getContext('2d');
+		var WIDTH = c.width = window.innerWidth;
+		var HEIGHT = c.height = window.innerHeight;
+
+		var Circle = function(x, y, r) {
+			this.x = x;
+			this.y = y;
+			this.vx = Math.random() * 20 - 10; 
+			this.vy = Math.random() * 20 - 10; 
+			this.r = r;
+			this.color = 0;
+		};
+
+		Circle.prototype = {
+			constructor: Circle,
+			update: function() {
+
+				var t = WIDTH + HEIGHT;
+				var d = this.x + this.y;
+				var p = d / t;
+
+				this.color = 360 * p;
+
+				this.vx += Math.random() * 2 - 1;
+				this.vy += Math.random() * 2 - 1;
+
+				this.vx *= 0.98;
+				this.vy *= 0.98;
+
+				this.x += this.vx;
+				this.y += this.vy;
+
+				if(this.x > WIDTH) {
+					this.x = WIDTH;
+					this.vx *= -1;
+				}
+				if(this.x < 0) {
+					this.x = 0;
+					this.vx *= -1;
+				}
+				if(this.y > HEIGHT) {
+					this.y = HEIGHT;
+					this.vy *= -1;
+				}
+				if(this.y < 0) {
+					this.y = 0;
+					this.vy *= -1;
+				}
+			},
+			render: function(ctx) {
+				ctx.save();
+				ctx.beginPath();
+				ctx.fillStyle = 'hsla(' + this.color + ', 100%, 50%, 0.89)';
+				ctx.translate(this.x, this.y);
+				ctx.arc(0, 0, this.r, 0, Math.PI * 2);
+				ctx.fill();
+				ctx.restore();
+			}
+		};
+
+		var circles = [];
+		var circleCount = 200;
+		var circle = null;
+
+		for(var i = 0; i < circleCount; i++) {
+			circle = new Circle(
+				WIDTH / 2,
+				HEIGHT / 2,
+				Math.random() * 10
+			);			
+			circles.push(circle);
+		}
+
+		requestAnimationFrame(function loop() {
+			requestAnimationFrame(loop);
+			ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+			ctx.fillRect(0, 0, WIDTH, HEIGHT);
+			for(var i = 0; i < circleCount; i++) {
+				circle = circles[i];
+				circle.update();
+				circle.render(ctx);				
+			}
+		});
+		
+	});
+
+
+
+
+</script>
+</body>
+</html>

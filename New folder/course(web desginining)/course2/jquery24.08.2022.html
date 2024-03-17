@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="jsjq/jQuery v3.6.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#btnRmv").click(function()
+			{
+				$("p").remove(".p4");
+			});
+			$("#btnEmp").click(function() 
+			{
+				$("p").empty();
+			});
+
+				// $("#show").click(function() {
+					
+				// 	$("p").show();
+				// 	// $(".p4").show();
+
+				// });
+
+		});
+		
+		
+
+	</script>
+
+</head>
+<body>
+	<p>Hello</p>
+	<p>Hello</p>
+	<p>Hello</p>
+	<p class="p4">bye</p>
+
+	<button id="btnRmv">REMOVE</button>
+	<button id="btnEmp">EMPTY</button>
+	<button id="show">Show</button>
+</body>
+</html>

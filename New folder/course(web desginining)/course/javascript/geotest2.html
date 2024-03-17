@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+<script>
+   function getLocation()
+   {
+
+   		if(window.navigator.geolocation)
+			{
+				navigator.geolocation.getCurrentPosition(showLocation);
+
+				//alert("Geolocation supported by Browser")
+			}
+			else
+			{
+				alert("Update your browser")
+			}
+
+   }
+     function showLocation(position)
+     {
+       alert("Latitude: " + position.coords.latitude + "\n" + 
+       "Longitude: " + position.coords.longitude);    
+   }
+
+   function errorHandler(error) {
+	    switch (error.code) {
+	     case error.PERMISSION_DENIED:
+	     alert ("You have denied access to your position.");
+	     break;
+	     case error.POSITION_UNAVAILABLE:
+	       alert ("There was a problem getting your position.");
+	     break;
+	     case error.TIMEOUT:
+	       alert ("The application has timed out attempting to get your position.");        
+	     break;
+	  }
+}
+</script> 
+</head>
+
+<body>
+	<button onclick="getLocation()"> Get Location</button>
+</body>
+</html>

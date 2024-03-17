@@ -1,0 +1,33 @@
+Loop :  Loop is used to excute a task multiple times unit a specif condition is true.
+
+Types of Loop:
+
+1. while loop
+2. do while 
+3. for loop
+	Nested for Loop 
+_______________________________________________________________________________________________
+1. while Loop: It is an Entry Control Loop. In which condition is checked before entering the loop.
+	It will execute the while block if and only if the condition is true.
+
+Syntax:
+		intialization;
+
+		while(condition)
+		{
+			Statements;
+			inc/dec;
+		}
+
+
+2. do while : It is an exit control loop, In which condition is checked after executing the statements once. In this it will execute the statement once even the condition is false .
+
+
+Syntax:
+	initialization;
+
+	do
+	{
+			statements;
+			inc/dec;
+	}while(condition);

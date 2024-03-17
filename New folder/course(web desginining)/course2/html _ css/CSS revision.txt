@@ -1,0 +1,67 @@
+CSS: styling, 
+Types of CSS:
+1. Internal	: for a page 
+2. External 	: can be used more than one page
+3. Inline		: for a single tag
+___________________________________________________
+Selectors
+1. element/type	[h1{}]
+2. class		[.className{}]
+3. id		[#idName{}]
+4. universal	[*]
+_____________________________________________________________________________
+Text-properties
+	color
+	text-align
+	text-transform
+	text-decoration
+	text-indent
+	word-spacing
+font-properties
+	font-size
+	font-family
+	font-weight
+	font-varient
+	font-style
+pseudo classes
+
+:hover
+:first-letter
+:first-child
+:first-line
+:before
+:after
+:link
+:visited
+:active
+:focus
+__________________________________________
+
+<span> </span>	: inline span
+____________________________________________
+padding
+	padding-top
+	padding-bottom
+	padding-left
+	padding-right
+shorthand property
+		padding: T R B L
+		padding:10px;
+
+margin
+
+	margin-top
+	margin-bottom
+	margin-left
+	margin-right
+shorthand property
+		margin: T R B L
+		margin:10px;
+
+
+
+
+
+
+
+

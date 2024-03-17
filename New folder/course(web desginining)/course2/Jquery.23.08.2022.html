@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="jsjq/jQuery v3.6.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	
+$(document).ready(function() {
+
+$("#submit").click(function() {
+	
+	var name = ($("#name").val());
+	var lname = ($("#lname").val());
+	var age =  ($("#age").val());
+	var mobile = ($("#mobile").val());
+	var email = ($("#email").val());
+
+	var n1= name
+	var n2= lname
+	var n3= age
+	var n4= mobile
+	var n5= email
+
+
+	if(name=="")
+	
+	{
+		$("#name").css("background-color", "red");
+		alert("Name field is blank");
+		}
+				
+				else
+				{
+					$("#name").css("background-color", "lightgreen");
+				}
+
+if(lname=="")
+	
+	{
+		$("#lname").css("background-color", "red");
+		alert("Lname field is blank");
+		}
+				
+				else
+				{
+					$("#lname").css("background-color", "lightgreen");
+				}
+
+if(age=="")
+	
+	{
+		$("#age").css("background-color", "red");
+		alert("age field is blank");
+		}
+				
+				else
+				{
+					$("#age").css("background-color", "lightgreen");
+				}				
+
+if(mobile=="")
+	
+	{
+		$("#mobile").css("background-color", "red");
+		alert("mobile field is blank");
+		}
+
+		else if(mobile.length!=10)
+{
+	alert("phone number must be 10 digit")
+	mobile.focus();
+	return false;
+}
+				
+				else
+				{
+					$("#mobile").css("background-color", "lightgreen");
+				}				
+
+
+if(email=="")
+	
+	{
+		$("#email").css("background-color", "red");
+		alert("email field is blank");
+		}
+				
+				else
+				{
+					$("#email").css("background-color", "lightgreen");
+				}
+
+				$("#n1").html(n1);
+				$("#n2").html(n2);
+				$("#n3").html(n3);
+				$("#n4").html(n4);
+				$("#n5").html(n5);
+
+
+});
+
+});
+
+</script>
+
+
+</head>
+<body>
+
+
+
+<table>
+	<tbody>
+		<tr>
+		<td><label>Name</label></td>
+		<td><input type="text" name="Fname" placeholder="FirstName" id="name" required> </td>
+	</tr>
+
+		<tr>
+		<td><label>Last Name</label></td>
+		<td><input type="text" name="Lname" placeholder="LastName"  id="lname" required ></td>
+	</tr>
+
+		<tr>
+		<td><label>Age</label></td>
+		<td><input type="number" name="Age" placeholder="Enter Your Age" id="age"></td>
+	</tr>
+
+	</tr>
+
+		<tr>
+		<td><label>Mobile No.</label></td>
+		<td><input type="number" name="Mobile"  placeholder="Enter Your Mobile" id="mobile"></td>
+	</tr>
+
+	<tr>
+		<td><label>Email</label></td>
+		<td><input type="email" name="Email" placeholder="123@mail.com" id="email"></td>
+	</tr>
+	<tr>
+		<td><button id="submit">Submit</button></td>
+		
+	</tr>
+
+	<tr>
+		<td> First Name</td>
+		<td><b id="n1" style="border: 1px solid black;"></b></td>
+	</tr>
+		<tr>
+		<td>Last Name</td>
+		<td><b id="n2" style="border: 1px solid black;"></b></td>
+	</tr>
+		<tr>
+		<td>Age</td>
+		<td><b id="n3" style="border: 1px solid black;"></b></td>
+	</tr>
+		<tr>
+		<td>Mobile</td>
+		<td><b id="n4" style="border: 1px solid black;"></b></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><b id="n5" style="border: 1px solid black; font-size: ;"></b></td>
+	</tr>
+
+	</tbody>
+</table>
+
+
+
+</body>
+</html>

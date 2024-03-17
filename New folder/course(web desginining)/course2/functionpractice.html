@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+<script>
+	
+// function hello() {
+
+// var x =document.getElementById("showhide");
+
+// if (x.style.display==="none") {
+// 	x.style.display="block";
+// }else
+// {
+// 	x.style.display="none";
+// }
+
+// }
+
+
+// function colorchange()
+// {
+
+// 	var a= document.getElementById("colorchange");
+
+// 	if(a.style.color =="green")
+// 	{
+// 		a.style.color="red";
+// 	}else
+// 	{
+// 		a.style.color="green";
+// 	}
+
+// }
+
+
+
+
+// function sum(a,b) {
+// 	document.write(a+b)
+// 	document.write("<br>")
+// 	document.write("<br>")
+// }
+
+
+
+
+// sum(10,20)
+
+
+
+
+
+// var ary= [75,80,85,96]
+// var sum=0;
+// var per=0;
+
+// document.write(ary+ "<br>");
+
+
+
+// document.write("<ul>")
+// for(a = 0; a < ary.length; a++ )
+// {
+// 	document.write("<li>"+ary[a]+ "</li>")
+
+// 	sum= sum + ary[a];
+// 	per= per + ary[a]/ 400 * 100
+
+// }
+
+// document.write("</ul>")
+
+
+// document.write("<table border = '1' cellpadding = '1' cellspacing = '1' style='border-collapse: collapse;' >")
+// document.write("<tr>")
+// document.write("<td> Total Sum: </td> ")
+
+// document.write("<td>"+sum+"</td>");
+// document.write("</tr>")
+// document.write("<tr>")
+// document.write("<td> Total Per :- </td> ")
+// document.write("<td>"+per+"</td>");
+// document.write("</tr>")
+
+// document.write("</table>")
+
+
+
+
+
+// for(var i=1; i<=10; i++)
+// {
+// 	document.write(i+"<br>")
+// }
+
+
+// for(var i =0; i<5; i++)
+// 		{
+// 			document.write("<p>"+i+"</p>")
+// 		}
+
+
+// function test()
+
+// {
+// 	var x = document.getElementById("blank").value;
+// 	if (x=="") {
+// 		alert("text box is blank")
+// 		document.getElementById("blank").style.backgroundColor='red'
+
+		
+
+
+
+
+// 	}
+
+// document.getElementsByclassName("test").innerHTML=test;
+
+
+
+			// document.getElementById("avg").innerHTML=avg;
+			// document.getElementById("per").innerHTML=per;
+
+// }
+
+// function test1() {
+	
+// 	var y= document.getElementById("blank").value
+// 	// y.setAttribute('required','');
+// 	document.getElementById("demo").innerHTML= y;
+	
+// }
+
+// function validateForm() {
+//   let x = document.input["Lname"]["Fname"].value;
+//   if (x == "") {
+//     alert("Name must be filled out");
+//     return false;
+//   }
+// }
+
+
+
+
+function result() {
+	var name= document.getElementById("name").value;
+	var lname= document.getElementById("lname").value;
+	var age= document.getElementById("age").value;
+	var mobile = document.getElementById("mobile").value;
+	var email= document.getElementById("email").value;
+
+
+	var n1= name
+	var n2= lname
+	var n3= age
+	var n4= mobile
+	var n5= email
+
+
+if (name=="") {
+
+	alert("Name field is blank");
+	document.getElementById("name").style.backgroundColor='red'
+	
+}
+
+else
+{
+	document.getElementById("name").style.backgroundColor='green'
+	document.getElementById("name").style.color='white'
+}
+
+
+if (lname=="") {
+
+	alert("LName field is blank");
+	document.getElementById("lname").style.backgroundColor='red'
+
+	
+}
+else
+{
+	document.getElementById("lname").style.backgroundColor='green'
+	document.getElementById("lname").style.color='white'
+}
+
+if (age=="") {
+
+	alert("Age field is blank");
+	document.getElementById("age").style.backgroundColor='red'
+	
+}
+
+else
+{
+	document.getElementById("age").style.backgroundColor='green'
+	document.getElementById("age").style.color='white'
+}
+
+if (mobile=="") {
+
+	alert("Mobile field is blank");
+	document.getElementById("mobile").style.backgroundColor='red'
+	
+}
+else if(mobile.length!=10)
+{
+	alert("phone number must be 10 digit")
+	mobile.focus();
+	return false;
+}
+else
+{
+	document.getElementById("mobile").style.backgroundColor='green'
+	document.getElementById("mobile").style.color='white'
+}
+
+
+
+
+if (email=="") {
+
+	alert("Email field is blank");
+	document.getElementById("email").style.backgroundColor='red'
+	
+}
+else
+{
+	document.getElementById("email").style.backgroundColor='green'
+	document.getElementById("email").style.color='white'
+}
+
+
+document.getElementById("n1").innerHTML=n1;
+document.getElementById("n2").innerHTML=n2;
+document.getElementById("n3").innerHTML=n3;
+document.getElementById("n4").innerHTML=n4;
+document.getElementById("n5").innerHTML=n5;
+
+};
+
+// document.getElementById("n1").innerHTML=n1;
+
+
+</script>
+
+
+
+
+
+</head>
+<body>
+
+<!-- p id="showhide">Rahul</p>
+
+
+<button onclick="hello()">show</button>
+
+<p id="colorchange"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+
+<button onclick ="colorchange()">colorchange</button>
+ -->
+
+<table>
+	<tbody>
+		<tr>
+		<td><label>Name</label></td>
+		<td><input type="text" name="Fname" placeholder="FirstName" id="name" required> </td>
+	</tr>
+
+		<tr>
+		<td><label>Last Name</label></td>
+		<td><input type="text" name="Lname" placeholder="LastName"  id="lname" required ></td>
+	</tr>
+
+		<tr>
+		<td><label>Age</label></td>
+		<td><input type="number" name="Age" placeholder="Enter Your Age" id="age"></td>
+	</tr>
+
+	</tr>
+
+		<tr>
+		<td><label>Mobile No.</label></td>
+		<td><input type="number" name="Mobile"  placeholder="Enter Your Mobile" id="mobile"></td>
+	</tr>
+
+	<tr>
+		<td><label>Email</label></td>
+		<td><input type="email" name="Email" placeholder="123@mail.com" id="email"></td>
+	</tr>
+	<tr>
+		<td><button type="submit" onclick="result()">Submit</button></td>
+		
+	</tr>
+
+	<tr>
+		<td> First Name</td>
+		<td><b id="n1" style="border: 1px solid black;"></b></td>
+	</tr>
+		<tr>
+		<td>Last Name</td>
+		<td><b id="n2" style="border: 1px solid black;"></b></td>
+	</tr>
+		<tr>
+		<td>Age</td>
+		<td><b id="n3" style="border: 1px solid black;"></b></td>
+	</tr>
+		<tr>
+		<td>Mobile</td>
+		<td><b id="n4" style="border: 1px solid black;"></b></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><b id="n5" style="border: 1px solid black; font-size: ;"></b></td>
+	</tr>
+
+	</tbody>
+</table>
+
+
+
+
+</body>
+</html>

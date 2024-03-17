@@ -1,0 +1,567 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	text-transform: capitalize;
+
+}
+
+/*heading*/
+
+
+.heading
+{
+	height: 50px;
+	width: 100%;
+	background: rgba(208, 208, 208, 0.5);
+}
+
+.heading a
+{
+	text-decoration: none;
+	color: black;
+	margin-bottom: 1px;
+
+}
+
+
+
+/*Header*/
+
+
+
+.nav
+{
+	width: 100%;
+	height: 100%;
+	background: darkred;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.col1
+{
+	flex-basis: 40%;
+	width: 100%;
+	
+}
+.col2
+{
+	flex-basis: 60%;
+	width: 100%;
+	margin-top: 30px;
+	
+
+}
+.col1 ul
+{
+	display: inline-flex;
+	margin-left: 170px;
+}
+.col1 ul li
+{
+	list-style: none;
+}
+
+.col1 li a
+{
+	text-decoration: none;
+}
+
+
+
+
+.col2 ul
+{
+	display: inline-flex;
+	/*margin-left: -50px;*/
+
+}
+.col2 li
+{
+	list-style: none;
+	padding: 20px;
+	margin: auto;
+}
+
+
+.col2 li a
+{
+	text-decoration: none;
+	color: rgba(32, 178, 170, 1.0);
+	
+}
+
+.col2 li a:hover
+{
+	color: whitesmoke;
+}
+
+.apply
+{
+	width: 100px;
+	height: 10px;
+	padding: 0px;
+	background: white;
+	color: darkred;
+	text-align: center;
+	margin-top: -10px;
+
+}
+
+
+
+
+/*.header
+{
+	height: 70px;
+	width: 100%;
+	background: darkred;
+}
+
+.header ul
+{
+	display: inline-flex;
+	list-style: none;
+	margin-left: 60px;
+}
+
+.header ul li
+{
+	width: 100px;
+	padding: 10px 20px;
+	margin: 10px;
+	font-size: 15px;
+	
+}
+
+.header ul li a 
+{
+	text-decoration: none;
+	color: rgba(32, 178, 170, 1.0);
+}
+
+.header ul li a:hover
+{
+	color: #fff;
+}*/
+
+
+
+/*navigation*/
+
+
+nav
+{
+	width: 100%;
+	/*background: darkred;*/
+	margin-top: 15px;
+}
+.navigation ul
+
+{
+	list-style: none;
+	display: inline-flex;
+}
+.navigation ul img
+{
+	margin-left: 70px;
+}
+
+.navigation ul li
+{
+	padding: 10px;
+	margin-left: 50px;
+}
+.navigation ul li a
+{
+	text-decoration: none;
+	color: black;
+	text-transform: capitalize;
+}
+.navigation ul li a:hover
+{
+	padding: 17px 0px;
+	color: darkred;
+	border-bottom: 7px solid darkred;
+
+}
+
+/*About Us submenu*/
+
+
+.submenu
+{
+	display: none;
+}
+
+.navigation ul li:hover .submenu
+{
+	display: block;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 20px;
+	background: rgb(248,248,255);
+
+}
+.navigation ul li:hover .submenu ul
+{
+	display: block;
+}
+
+.navigation ul li:hover .submenu ul li
+{
+	text-align: left;
+	margin-left: 10px;
+}
+
+.submenu ul li a:hover  
+{
+	color: violet;
+	border-bottom: none;
+}
+
+/*About us
+sub-menu1
+hoverme*/
+
+
+
+.sub-menu1
+{
+	display: none;
+}
+
+.fa-angle-right
+{
+	float: right;
+}
+.hoverme:hover .sub-menu1
+{
+	display: block;
+	position: absolute;
+	margin-top: -30px;
+	margin-left: 215px;
+	background: rgb(248,248,255);
+	width: 400px;
+}
+
+.sub-menu1 ul li a:hover 
+{
+	color: violet;
+}
+
+/*Admissions
+submenu1
+hoverme1
+sub-menu2*/
+
+
+.submenu1
+{
+	display: none;
+}
+
+.navigation ul li:hover .submenu1
+{
+	display: block;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 20px;
+	background: rgb(248,248,255);
+	width: 250px;
+}
+
+.navigation ul li:hover .submenu1 ul
+{
+	display: block;
+}
+
+.navigation ul li:hover .submenu1 ul li
+{
+	text-align: left;
+	margin-left: 10px;
+}
+
+.sub-menu2
+{
+	display: none;
+}
+.hoverme1:hover .sub-menu2
+{
+	display: block;
+	position: absolute;
+	margin-top: -30px;
+	margin-left: 228px;
+	background: rgb(248,248,255);
+	width: 400px;
+}
+
+.sub-menu2 ul li a:hover 
+{
+	color: violet;
+	border-bottom: none;
+}
+.submenu1 ul li a:hover  
+{
+	color: violet;
+	border-bottom: none;
+}
+
+
+/*Acadmics
+submenu2
+hoverme2
+sub-menu3*/
+
+
+
+
+.submenu2
+{
+	display: none;
+}
+
+.navigation ul li:hover .submenu2
+{
+	display: block;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 20px;
+	background: rgb(248,248,255);
+	width: 350px;
+}
+
+.navigation ul li:hover .submenu2 ul
+{
+	display: block;
+}
+.navigation ul li:hover .submenu2 ul li
+{
+	text-align: left;
+	margin-left: 08px;
+}
+
+.sub-menu3
+{
+	display: none;
+}
+.hoverme2:hover .sub-menu3
+{
+	display: block;
+	position: absolute;
+	margin-top: -30px;
+	margin-left: -312px;
+	background: rgb(248,248,255);
+	width: 300px;
+}
+
+.sub-menu3 ul li a:hover 
+{
+	color: violet;
+	border-bottom: none;
+}
+.submenu2 ul li a:hover  
+{
+	color: violet;
+	border-bottom: none;
+}
+
+
+/*section*/
+
+section
+{
+	height: 700px;
+	width: 100%;
+	background-image: url(../Best-and-Top-University-in-Uttar-Pradesh-UP-India.jpg);
+	background-size: cover;
+	background-repeat: none;
+	background-position: center;
+	animation-name: imgchange;
+	animation-duration: 30s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-delay: 20s;
+	animation-direction: alternate-reverse;
+
+}
+
+@keyframes imgchange
+{
+	20%
+	{
+		background-image: url(../PhD-Admission-in-Uttar-Pradesh-UP-India.jpg);
+		background-size: cover;
+	}
+	
+	40%
+	{
+		background-image: url(../Top-Agriculture-Colleges-in-Uttar-Pradesh-UP-India.jpg);
+		background-size: cover;
+	}
+	60%
+	{
+		background-image: url(../Top-DPharma-BPharma-MPharma-Colleges-in-Uttar-Pradesh-UP-India.jpg);
+	}
+	80%
+	{
+		background-image: url(../Top-Law-Colleges-in-Uttar-Pradesh-UP-India.jpg);
+	}
+}
+
+.details
+{
+	display: inline-flex;
+	max-width: 100%;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 70px;
+}
+.left
+{
+	flex-basis: 33%;
+	/*margin: 10px;*/
+	/*margin-left: 150px;*/
+	padding: 2px 2px 2px 2px;
+
+}
+.middle
+{
+	flex-basis: 33%;
+	/*margin: 10px;*/
+	/*margin-left: 150px;*/
+	padding: 2px 2px 2px 2px;
+
+}
+.right{
+	flex-basis: 33%;
+	/*margin: 10px;*/
+	/*margin-left: 150px;*/
+	padding: 2px 2px 2px 2px;
+}
+
+
+
+.student
+{
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto;
+	background-color: darkred;
+	height: 380px;	
+	padding: 10px;
+	width: 100%;
+	max-width: 100%;
+	font-size: 13px;
+	color: whitesmoke;
+	line-height: 1.5;
+
+}
+
+.col-SVUPlus
+{
+	/*flex-basis: 33%;*/
+	margin-left: auto;
+	margin-top: 50px;
+	padding-left: 200px;
+	opacity: 0.8;
+	
+}
+.col-SVUPlus p
+
+{
+	margin-top: 20px;
+/*	font-size: 12px;*/
+
+}
+.col-SVUPlus h2
+{
+	margin-top: 20px;
+}
+
+.col-Ultra-modernInfrastructure
+{
+	/*flex-basis: 33%;*/
+	margin-left: auto;
+	margin-top: 50px;
+	/*margin-right: 30px;*/
+	padding-left: 50px;
+	opacity: 0.8;
+}
+
+.col-Ultra-modernInfrastructure p
+
+{
+	margin-top: 20px;
+}
+.col-Ultra-modernInfrastructure h2
+{
+	margin-top: 20px;
+}
+
+.col-ExpertFaculty
+{
+	/*flex-basis: 33%;*/
+	margin-left: auto;
+	margin-top: 50px;
+/*	margin-right: 30px;*/
+	padding-left: 50px;
+	opacity: 0.8;
+}
+
+.col-ExpertFaculty p
+
+{
+	margin-top: 20px;
+}
+.col-ExpertFaculty h2
+{
+	margin-top: 20px;
+}
+
+.col-PlacementandInternships
+{
+	/*flex-basis: 33%;*/
+	margin-left: auto;
+	margin-top: 50px;
+	/*margin-right: 50px;*/
+	padding-left: 50px;
+	padding-right: 200px;
+	opacity: 0.8;
+	
+}
+
+.col-PlacementandInternships p
+
+{
+	margin-top: 20px;
+}
+.col-PlacementandInternships h2
+{
+	margin-top: 20px;
+}
+
+.NewsUpdates
+{
+	width: 100%;
+	height: 100%;
+	/*background: darkred;*/
+	margin-top: 20px;
+	display: flex;
+}
+
+
+.left-col
+{
+flex-basis: 50%;
+background-color: white;
+padding-left: 250px;
+margin-top: 100px;
+}
+.right-col
+{
+	flex-basis: 50%;
+	background-color: darkred;
+	height: 500px;
+}

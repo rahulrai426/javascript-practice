@@ -1,0 +1,85 @@
+CSS : Cascading Style Sheet , Which is used to define style to the web Page.
+Types of CSS 
+1. Inline	
+2. Internal
+3. External 
+
+_____________________________________
+1. Inline : It is used for a single element only
+Syntax:
+	<tagName style="proerty: Value; "> </tagName>
+
+
+2. Internal : It is used for a single web Page. include the style in <style> </style> tag inside head section
+syntax:
+<head>
+	<style>
+
+		selector
+		{
+			property: Value;
+			...
+
+		}
+
+	</style>
+</head>
+
+3.External CSS: It can be used for more than one. This Css is written in another file saved with .css extension. And we can include this file in HTML file using <link> tag insode head .
+
+Syntax:
+	<link rel="stylesheet" src="style.css">
+__________________________________________________________________________________________
+
+Priority:
+1. Inline
+2. Internal 
+3. External 
+_________________________________________________________________________________________
+
+Selectors:
+1. Element/ Type Selector
+2. Class Selector
+3. ID Selector
+4. Universal Selector
+_________________________________________________________________________________________
+
+1. element selector :
+	Syntax:
+			element
+			{
+				property : value;
+				....
+				,,,
+			}
+
+2. class Selector :
+		.className
+		{
+			property:value;
+			...
+		}
+
+Class can be used more than  one time in webpage
+
+3. Id selector : It must be unique for a webpage
+
+Syntax:
+	#idName
+	{
+		property:value;
+		....
+		...
+
+	}
+
+
+4. Universal Slector : apllied for all the pages 
+
+	*
+	{
+		property:value;
+		....
+		....
+	}
+________________________________________________________________________

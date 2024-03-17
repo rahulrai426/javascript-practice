@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="assets/js/script.js"></script>
+	<style>
+		.div1
+		{
+			background-color: maroon;
+			height: 200px;
+			margin-bottom: 20px;
+			color: white;
+		}
+		.new
+		{
+			background-color: aqua;
+			color: darkblue;
+		}
+		td
+		{
+			padding: 30px;
+			/*height: 400px;*/
+			background-color: maroon;
+		}
+		tr
+		{
+			padding: 30px;
+		}
+		table
+		{
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+		<div class="new">
+			<button onclick="displayDiv(3)"> Display Div </button>
+		</div>
+		<div class="new">
+				<!-- <button onclick="printTable()"> Print Table </button> -->
+		</div>
+		<script>
+		function printTable()
+		{
+			var num =parseInt(prompt("Enter the number of rows : "))
+			document.write("<table border='1' width='100%'>");
+			for(var i=0; i<num; i++)
+			{
+				document.write("<tr> <td> I am Row</td> </tr>")
+			}
+			document.write("</table>");
+
+		}
+		printTable();
+		</script>
+</body>
+</html>

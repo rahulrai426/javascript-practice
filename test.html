@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<p id="show">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<button id="button" onclick="show()">Test</button>
+
+<p id="test"></p>
+
+<button id="test" onclick="news()">Click Me</button>
+
+<script type="text/javascript">
+	
+function show() {
+
+var x=document.getElementById('show')
+
+if (x.style.visibility==='hidden') {
+
+	x.style.visibility='visible'
+}
+else
+	{
+	x.style.visibility='hidden'
+}
+
+}
+
+document.write("<br>")
+
+
+
+
+document.getElementById("test").innerHTML="Hello world"
+
+
+
+function test()
+{
+	alert("This is my first line")
+}
+
+
+function  news() {
+	
+	window.print("current page")
+}
+
+
+
+// var obj={
+// 	name: "rahul",
+// 	age: 24,
+// 	city: "delhi"
+// };
+
+// for(let x in obj){
+// 	document.write(obj[x]+"<br>")
+// }
+
+
+
+document.write("<br>")
+
+
+var marks=[10,10,20,30,40]
+
+var sum=0;
+
+for(var i= 0; i<marks.length; i++)
+{
+	document.write(marks[i]+"<br>")
+
+	sum= sum + marks[i]
+
+	
+
+}
+document.write(+sum)
+
+
+
+var ary= new ary(4)
+ary[]=parseInt(prompt("enter the number"))
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="assets/js/functions.js"></script>
+</head>
+<body>
+
+	<script>
+			document.write(msg());
+
+			var n1 = parseInt(prompt("Enter the number 1: "));
+			var n2 = parseInt(prompt("Enter the number 2: "));
+			var ch = parseInt(prompt("Press 1: Add \nPress 2:  Sub \nPress 3: Mul"));
+
+			switch(ch)
+			{
+				case 1:
+					document.write(`<p>${n1} + ${n2} =  ${addition(n1,n2)} </p>`);
+
+					break;
+				case 2:
+					if(n1>n2)
+					{
+						document.write("<p>"+n1+" - "+n2+" = "+sub(n1,n2));
+					}
+					else
+					{
+						t=n1;
+						n1=n2;
+						n2=t;
+						document.write("<p>"+n1+" - "+n2+" = "+sub(n1,n2));
+					}
+					break;
+				case 3:
+					document.write("<p>"+n1+" * "+n2+" = "+mul(n1,n2));
+					break;
+				default:
+					document.write("<h1> Invalid Choice </h1>")
+			}
+function msg()
+{
+	return "Welcome to the JS World !!";
+}
+
+
+function addition(n1,n2)
+{
+	return n1+n2;
+}
+function sub(n1,n2)
+{
+		return n1-n2;	
+	
+}
+
+function mul(n1,n2)
+{
+	return n1*n2;
+}
+
+
+
+	</script>
+
+</body>
+</html>

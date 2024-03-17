@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		div
+			{
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+		.header
+		{
+			background-color: black;
+			height: 50px;
+			border: 10px groove gold;
+			border-bottom: none;
+			margin-bottom: 0px;
+		}
+		body
+		{
+			margin: 0;
+			background-image: url(images/a.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-origin: border-box;
+		}
+
+		.nav
+		{
+			background-color: gold;
+			border-style: solid dotted solid dotted;
+			border-width: 10px 5px;
+			height: 70px;
+			border-color: darkred;
+			margin: 0px;
+		}
+		.section
+		{
+			height: 400px;
+			background-color: transparent;
+			/*background-image: url(images/a.png);*/
+			border-top: 9px ridge black;
+			color: white;
+			background-size: cover;
+			/*background-size: unset;*/
+			/*background-size: 100% 100%;*/
+			/*background-size: contain;*/
+			background-repeat: no-repeat;
+			border-radius: 20px;
+		}
+
+		p:first-letter
+		{
+			font-size: 50px;
+			color: darkblue;
+			font-weight: bold;
+			font-style: oblique ;
+		}
+		p:first-line
+		{
+			background-color: darkred;
+		}
+	li:first-child
+	{
+		background-color: gold;
+		font-size: 20px;
+	}
+	li:last-child
+	{
+		background-color: aqua;
+	}
+
+	li:nth-child(even)
+	{
+		background-color: aliceblue;
+	}
+	li:nth-child(3)
+	{
+		background-color: deeppink;
+	}
+	p:before
+	{
+		content: 'Before TEST';
+
+	}
+	p:after
+	{
+		content: 'After';
+	}
+
+	a:link
+	{
+		color: white;
+	}
+	.br{
+			/*background-color: darkred;*/
+			/*background-image: url(images/b.jpg);*/
+	background:linear-gradient(rgba(100,90,0,0.5) , rgba(100,90,0,0.5)), url(images/b.jpg);
+			background-size: cover;
+			height: 200px;
+			width: 200px;
+			border-radius: 50%;
+			border-bottom-right-radius: 30%;
+			border-top-right-radius: 10%;
+			border-top-left-radius: 5%;
+			border-bottom-left-radius: 70%;
+	}	
+	</style>
+</head>
+<body>
+
+	<div class="header">
+		<a href="" > HOME</a>
+	</div>
+	<div class="nav">
+		
+	</div>
+
+<div class="br">
+	
+</div>
+<div class="br2">
+	
+</div>
+<div class="br3">
+	
+</div>
+
+	<div class="section">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<ul>
+			<li> ONE </li>
+			<li>TWO</li>
+			<li>THREE</li>
+			<li>FOUR</li>
+			<li>FIVE</li>
+
+		</ul>
+	 </div>
+
+	 <div class="section">
+	 	
+	 </div>
+
+</body>
+</html>

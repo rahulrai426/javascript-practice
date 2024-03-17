@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="jsjq/jQuery v3.6.0.js"></script>
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function()
+		{
+			$("#show").click(function()
+			{
+				$("h1").show();
+				$("h1").css("background","green");
+				$("h1").css("color","white");
+			});
+			$("#hide").click(function()
+			{
+				$("h1").hide();
+			});
+
+		});
+
+
+$(document).ready(function()
+{
+	$("#two").click(function()
+	{
+		$("#one").hide();
+		$("#three").show();
+		$("#four").show();
+
+	});
+
+	$("#three").click(function()
+	{
+		$("#two").hide();	
+		$("#one").show();	
+		$("#three").show();
+		$("#four").show();
+
+	});
+
+	$("#four").click(function()
+	{
+		$("#two").show();	
+		$("#one").show();	
+		$("#three").hide();
+		$("#four").show();
+
+	});
+
+});
+
+
+
+	</script>
+</head>
+<body>
+
+
+	<p id="one">Rahul</p>
+	<p id="two">Aashi</p>
+	<p id="three">abhishek</p>
+	<p id="four">aryan</p>
+
+	<h1>Test</h1>
+	<button id="show" onclick="show()">Show</button>
+	<button id="hide" onclick="hide()">hide</button>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+Object : It is an real world entity with some properties and behaviour . Which means whatever exist in this world is knwon as object 
+
+		Object
+	Attributes	Behaviour
+	Proeprties	Function
+	Characterstics	Methods/Action
+
+
+		CAR
+	color		drive()
+	price		start()
+	modelno		stop()
+______________________________________________________________________________________________________________
+
+We can write javascript code inside <script> </script> tag , and <script> tag can be placed either in head tag or in body tag
+Types of Javascript :
+1. Internal JavaScript	: It is used for a page only 
+2. External JavaScript	: It can be used for more than one page , and we can include this file in html document using 
+			<script src="filename.js"> </script>
+All External Javascript files are saved with .js extension
+________________________________________________________________________________________________________
+document.write("Message");
+	document : Object
+	write()	: method
+_________________________________________________________________________________________________________
+Variable : Variable is a symbol which holds some value which can be changed according to the user need.
+	In Javascript variable is declared using "var" keyword
+Ex:
+	a = 10;
+here 
+a: variable 
+10: value
+____________________________________________
+Syntax:
+Variable declaration :
+	var varName;
+Multiple Variable Declaration
+	var varName1, varName2,....
+Variable initialization :
+	varName=value;
+
+varName1=value, varName2=value,...;
+
+
+Variable initialzation and declaration:
+	var varName=value;
+_______________________________________________
+
+Variable naming rules 
+1. Variable name always starts with an alphabet
+2. It can be alphanumeric [num1]
+3. It cannot contain any special character except underscore(_)	Ex:	emp_name
+4. It cannot contain any space in between [ emp name ]X
+5. It cannot start with a number
+6. It cannot be any javascript keyword
+7. It must be short and meaningful
+________________________________________________________
+Keyword: Keywords are reserve word with predefine meaning
+	All keywords must be in lowercase.
+Ex: var , break, ....
+
+NOTE: Javascript is an case sensitive language 	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

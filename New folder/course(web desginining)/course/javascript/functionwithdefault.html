@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script>
+		
+		function emp(eid, name, city="Dehradun")
+		{
+			document.write("<p> Welcome  "+name+"</p>");
+			document.write("<p> Your Employee Id is "+eid+"</p>");
+			document.write("<p> Your City is "+city+"</p>");
+		}
+
+		emp(101,"Raman");
+		emp(102,"Aman","Noida");
+
+		document.write("<h1>*******************************</h1>");
+
+		cities = ["Dehradun","Nainital","Shimla","Rishikesh","Delhi","Banaras","Agra"];
+		document.write("<p> No of City  : "+cities.length+"</p>")
+		cities = cities.sort();
+		for(var i=0; i<cities.length; i++)
+		{
+			document.write("<li>"+cities[i]+"</li>");
+		}
+
+
+
+
+	</script>
+
+
+</body>
+</html>
